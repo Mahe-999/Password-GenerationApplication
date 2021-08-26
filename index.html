@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PASSWORD GENERATOR APP</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        background-image: url('D:/xampp/htdocs/project/Password Generation App/p1.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      </style>
+  </head>
+  <body> 
+    <form id="passwordGeneratorForm">
+      <div class="container">
+        <h2>Password Generator Application</h2>
+        <div class="result__container">
+        <span id="result"></span>
+        <button id="copy">Copy</button>
+      </div>
+      <br>
+      <div class="options">
+        <div class="option">
+            <label>Length</label>
+          <input type="number" id="length" min="5" max="20" value="10">
+          <br>
+        </div>
+        <br>
+        <div class="option">
+          <input type="checkbox" id="uppercase" checked>
+          <label>Include Uppercase</label>
+          <br>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="numbers" checked>
+          <label>Include Numbers</label>
+          <br>
+        </div>
+        <div class="option">
+          <input type="checkbox" id="symbols" checked>
+          <label>Include Symbols</label>
+          <br>
+        </div>
+    </div>
+    <br>
+    <button class="btn" id="generate" type="submit">Generate Password</button>
+    </div>
+  </form>
+</body>
+</html>
